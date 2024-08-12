@@ -1,0 +1,125 @@
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+\usepackage{multicol}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+\title{Chapter-11 Section-A }
+\author{ee24btech11050 - Rahul Pothuri}
+\maketitle
+\newpage
+\bigskip
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\begin{enumerate}[start=26]
+\item %26
+Let $[x]$ be the greatest integer less than or equal to $x$. Then, at which of the following points the function
+$f\brak{x} = x \cos\brak{\pi\brak{x + [x]}}$ is discontinuous? 
+ \hfill  (JEE Adv.2017) \\
+\begin{enumerate} 
+\begin{multicols}{2}
+\item $x=-1$
+\item $x=0$
+\end{multicols}
+\begin{multicols}{2}
+\item $x=1$
+\item $x=2$
+\end{multicols}
+\end{enumerate}
+\item %27
+ Let $f\brak{x}=\frac{1-x \brak{1+\abs{1-x}}}{\abs{1-x}}\cos\left(\frac{1}{\abs{1-x}}\right)$ for $x\neq1$ .Then  
+\hfill (JEE Adv.2017) \\ 
+\begin{enumerate}
+\item $\lim_{x\to1^-} f\brak{x}=0$ 
+\item $\lim_{x\to1^-}$does not exist
+\item $\lim_{x\to1^+} f\brak{x}=0$ 
+\item $\lim_{x\to1^+}$does not exist 
+\end{enumerate}
+\item %28
+Let $f:\mathbb{R} \to \mathbb{R}$ $g:\mathbb{R} \to \mathbb{R}$ be two non-differentiable functions. If $f'\brak{x}=(e^{\brak{f\brak{x}-g\brak{x}}})g'\brak{x}$ for all $x\in R$ ,and $f\brak{1}=g\brak{2}=1$, then which of the following statement \brak{s} is \brak{are} TRUE? 
+\hfill  (JEE Adv.2018) \\ 
+\begin{enumerate}
+\begin{multicols}{2}
+\item $f\brak{2}<1-\log_e 2$ 
+\item $f\brak{2}>1-\log_e 2$ 
+\end{multicols}
+\begin{multicols}{2}
+\item $g\brak{2}>1-\log_e 2$ 
+\item $g\brak{2}<1-\log_e 2$ 
+\end{multicols}
+\end{enumerate}
+\item %29
+Let$f:\mathbb{R} \to \mathbb{R}$ given by \\
+$f\brak{x} = 
+\begin{cases} 
+x^5+5x^4+10x^3+10x^2+3x+1, & \text{if } x < 0; \\
+x^2-x+1, & \text{if } 0 \leq x <1; \\
+\frac{2}{3}x^3-4x^2=7x-\frac{8}{3} & \text{if } 1 \leq x <3; \\
+\brak{x-2}\log_e\brak{x-2}-x=\frac{10}{3},& \text{if } x \geq 3
+\end{cases}$ \\
+Then which of the following option is/are correct?
+\hfill  (JEE Adv.2019) \\
+\begin{enumerate}
+\item $f'$ has a local maximum at at x=1 
+\item $f$ is increasing on $\brak{-\infty , 0}$
+\item $f'$ is NOT differentiable at $x=1$
+\item $f$is onto 
+\end{enumerate} 
+ \item %30
+ Let $f:R \to R$ be a function. We say that $f$ has \\
+\textbf{PROPERTY 1} if $\lim_{h\to0}\frac{f\brak{h}-f\brak{0}}{\sqrt{\abs{h}}}$ exists and is finite, and \\
+\textbf{PROPERTY 2} if $\lim_{h\to0}\frac{f\brak{h}-\brak{0}}{h^2}$ exists and is finite \\
+Then which of the following options is/are correct? 
+\hfill (JEE Adv.2019) \\
+\begin{enumerate}
+\item $f\brak{x}=x^{\frac{2}{3}}$ has \textbf{PROPERTY 1} 
+\item $f\brak{x}=\sin{x}$ has \textbf{PROPERTY 2} 
+\item $\brak{x}=\abs{x}$ has \textbf{PROPERTY 1} 
+\item $\brak{x}=x\abs{x}$ has \textbf{PROPERTY 2} 
+\end{enumerate}
+\end{enumerate}
+\end{document}
